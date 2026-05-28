@@ -5,7 +5,11 @@ const wedding = {
 
 const dateText = document.querySelector("[data-wedding-date-text]");
 if (dateText) {
-  dateText.textContent = wedding.dateText;
+  dateText.innerHTML = wedding.dateText
+    .toUpperCase()
+    .split("")
+    .map((char) => `<span>${char === " " ? "&nbsp;" : char}</span>`)
+    .join("");
 }
 
 const countdownFields = {
