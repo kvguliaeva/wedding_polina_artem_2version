@@ -220,27 +220,36 @@ a {
 
 .hero-copy {
   position: absolute;
-  left: 34%;
+  left: 31.65%;
   right: 9.5%;
   top: 62.55%;
   text-align: right;
 }
 
 .date-label {
-  width: calc(100% + .22em);
-  margin: 0 -.22em 2.2% 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 0;
+  width: 100%;
+  margin: 0 0 2.2%;
   font-family: var(--sans);
   font-size: min(5vw, 21.5px);
   line-height: 1;
   text-transform: uppercase;
-  letter-spacing: .22em;
-  text-align: right;
+  letter-spacing: 0;
+  text-align: initial;
   white-space: nowrap;
+  overflow: hidden;
+}
+
+.date-label span {
+  display: block;
+  flex: 0 0 auto;
 }
 
 .hero-copy p:not(.date-label) {
-  width: calc(100% + .15em);
-  margin: 0 -.15em 0 0;
+  width: 100%;
+  margin: 0;
   color: #4a4944;
   font-family: var(--sans);
   font-size: min(2.55vw, 11px);
@@ -350,6 +359,10 @@ a {
   text-underline-offset: 4px;
 }
 
+.details-link {
+  margin: 18px 0 42px;
+}
+
 .location-timing-card {
   position: relative;
   overflow: hidden;
@@ -370,6 +383,19 @@ a {
   font-size: 25px;
   font-weight: 400;
   line-height: .9;
+}
+
+.program-card {
+  padding-top: 44px;
+}
+
+.program-card .timing-path {
+  top: 106px;
+  bottom: 46px;
+}
+
+.location-only-card {
+  padding-bottom: 32px;
 }
 
 .location-polaroid {
@@ -405,6 +431,14 @@ a {
   gap: 10px;
   width: min(310px, 100%);
   margin: 0 auto 42px;
+}
+
+.celebration-polaroid {
+  margin-bottom: 18px;
+}
+
+.celebration-address {
+  margin-bottom: 42px;
 }
 
 .address-list div {
@@ -508,11 +542,15 @@ a {
 }
 
 .details-final-card h2 {
-  margin: 0 0 20px;
+  margin: 42px 0 20px;
   font-family: "IsadoraWP", var(--script);
   font-size: 26px;
   font-weight: 400;
   line-height: .92;
+}
+
+.details-final-card h2:first-child {
+  margin-top: 0;
 }
 
 .details-final-card p {
@@ -531,7 +569,7 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 12px;
-  margin: 17px 0 44px;
+  margin: 20px 0 44px;
 }
 
 .forbidden-colors span {
@@ -546,6 +584,23 @@ a {
 
 .red-ban {
   background: #b82724;
+}
+
+.flower-line {
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 24px;
+  height: 34px;
+  margin: -5px 0 0 7px;
+  background: url("data:image/svg+xml,%3Csvg viewBox='0 0 128 164' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' stroke='%23171717' stroke-width='1.15' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpath d='M61 155 C79 119 63 89 66 59'/%3E%3Cpath d='M66 59 C57 46 50 31 39 18 C24 0 4 26 22 45 C34 58 49 57 66 59Z'/%3E%3Cpath d='M66 59 C45 63 22 61 11 78 C1 94 22 106 43 93 C55 85 61 72 66 59Z'/%3E%3Cpath d='M66 59 C56 31 68 5 86 6 C104 7 91 38 66 59Z'/%3E%3Cpath d='M66 59 C83 28 113 27 111 50 C109 75 83 73 66 59Z'/%3E%3Cpath d='M66 59 C87 49 117 51 121 68 C125 84 99 94 66 59Z'/%3E%3Cpath d='M66 59 C58 45 61 36 69 37 C78 38 75 51 66 59Z'/%3E%3Cpath d='M66 59 C52 53 44 55 44 64 C45 73 58 70 66 59Z'/%3E%3Cpath d='M66 59 C73 45 82 43 85 51 C88 60 76 64 66 59Z'/%3E%3Cpath d='M72 111 C85 100 100 100 116 104 C101 116 88 119 72 111Z'/%3E%3C/g%3E%3C/svg%3E") center / contain no-repeat;
+  vertical-align: middle;
+}
+
+.flowers-heading {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0;
 }
 
 .contact-link {
@@ -832,14 +887,14 @@ a {
   }
 
   .hero-copy {
-    left: 34%;
+    left: 31.65%;
     right: 9.5%;
     top: 62.75%;
   }
 
   .date-label {
     font-size: min(5vw, 21.5px);
-    letter-spacing: .22em;
+    letter-spacing: 0;
   }
 
   .hero-copy p:not(.date-label) {
