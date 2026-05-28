@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Полина & Артем | Свадебное приглашение</title>
   <meta name="description" content="Свадебное приглашение Полины и Артема">
-  <link rel="stylesheet" href="style.css?v=zags-color-2">
+  <link rel="stylesheet" href="style.css?v=final-structure-clean-2">
 </head>
 <body>
   <main class="site">
@@ -28,7 +28,7 @@
         </div>
 
         <div class="hero-copy">
-          <p class="date-label" data-wedding-date-text>04 сентября 2026</p>
+          <p class="date-label" data-wedding-date-text><span>0</span><span>4</span><span>&nbsp;</span><span>С</span><span>Е</span><span>Н</span><span>Т</span><span>Я</span><span>Б</span><span>Р</span><span>Я</span><span>&nbsp;</span><span>2</span><span>0</span><span>2</span><span>6</span></p>
           <p>Мы женимся и хотим разделить это событие с вами - самыми близкими и любимыми людьми</p>
         </div>
 
@@ -47,28 +47,12 @@
 
     <section class="message-card" aria-label="Приглашение">
       <h2>Дорогие родные и близкие!</h2>
-      <p>Мы нашли друг в друге свою половинку<br>и с радостью приглашаем вас разделить<br>с нами самый счастливый день.</p>
-      <p>Ваше присутствие станет лучшим началом<br>нашей семейной истории.</p>
+      <p>Мы женимся и будем счастливы разделить<br>этот важный день именно с вами -<br>ваше присутствие станет прекрасным началом<br>нашей семейной истории.</p>
       <span class="message-line" aria-hidden="true"></span>
-      <p class="confirm-text">до <b>25 июня</b> подтвердите свое присутствие!<br>Заполните анкету по отдельности,<br>чтобы мы понимали предпочтения каждого</p>
-      <a class="message-link" href="https://forms.yandex.ru/u/6a1710e11f1eb54b08bc7a7d" target="_blank" rel="noreferrer">заполнить анкету</a>
     </section>
 
-    <section class="location-timing-card" aria-label="Локация и тайминг">
-      <h2>Локация</h2>
-      <figure class="location-polaroid">
-        <img class="zags-photo" src="assets/zags-location-2.webp?v=2" alt="ЗАГС в Пушкине">
-        <figcaption>ЗАГС<br>Пушкин, ул. Садовая 22</figcaption>
-      </figure>
-
-      <div class="address-list">
-        <div>
-          <span>Празднование</span>
-          <p>Ленинградская область, Гатчинский МО, д. Жабино, ул. Новая, д. 50</p>
-        </div>
-      </div>
-
-      <h2>Программа</h2>
+    <section class="location-timing-card program-card" aria-label="Программа мероприятия">
+      <h2>Программа нашего мероприятия</h2>
       <div class="timing-path" aria-hidden="true"></div>
       <ol class="timing-list">
         <li class="timing-item timing-left">
@@ -99,26 +83,47 @@
       </ol>
     </section>
 
+    <section class="location-timing-card location-only-card" aria-label="ЗАГС">
+      <h2>ЗАГС</h2>
+      <figure class="location-polaroid">
+        <img class="zags-photo" src="assets/zags-location-2.webp?v=2" alt="ЗАГС в Пушкине">
+        <figcaption>Пушкин, ул. Садовая 22</figcaption>
+      </figure>
+    </section>
+
     <section class="details-final-card" aria-label="Дресс-код и контакты">
       <div class="final-text">
         <h2>Дресс-код</h2>
-        <p>Нам будет приятно, если вы поддержите настроение торжества и выберете любой красивый образ.</p>
-        <p class="shades-title">Под запретом</p>
+        <p>Наша свадьба - прекрасный повод надеть все самое красивое! Чтобы вы чувствовали себя комфортно и могли блистать в этот день, строгого дресс-кода у нас нет.</p>
+        <p>Есть лишь одна просьба: пожалуйста, избегайте в своих нарядах двух цветов - белого и красного.</p>
         <div class="forbidden-colors" aria-label="Запрещенные цвета">
           <span class="white-ban"></span>
           <span class="red-ban"></span>
         </div>
 
-        <h2>Контакты</h2>
-        <p>Если у вас остались вопросы, связанные с организацией свадьбы, можно позвонить нашему организатору.</p>
-        <a class="contact-link" href="tel:+79500164246">+7 950 016-42-46<br>Ольга Леонова</a>
-
-        <h2>Пожелания</h2>
-        <p class="gift-note">Если вы планировали подарить нам цветы, замените их, пожалуйста, на виниловую пластинку: сразу после свадьбы мы уезжаем в путешествие и не успеем насладиться букетами, а пластинки будут еще много лет наполнять наш дом прекрасными мелодиями.</p>
-        <p class="gift-note">Теплые пожелания и подарки будет удобно передать в конверте.</p>
+        <h2>Анкета</h2>
+        <p class="gift-note">до <b>25 июня</b> просим заполнить анкету: каждому гостю индивидуально, чтобы мы могли учесть ваши предпочтения.</p>
+        <a class="message-link details-link" href="https://forms.yandex.ru/u/6a1710e11f1eb54b08bc7a7d" target="_blank" rel="noreferrer">заполнить анкету</a>
 
         <h2>Важно</h2>
         <p class="gift-note">Празднование пройдет в доме, который вместит нашу компанию на два дня - с 4 по 6 сентября. Возьмите с собой купальные костюмы и тапочки, чтобы с комфортом посетить бассейн и баню.</p>
+
+        <h2>Празднование</h2>
+        <div class="address-list celebration-address">
+          <div>
+            <p>Ленинградская область, Гатчинский МО, д. Жабино, ул. Новая, д. 50</p>
+          </div>
+        </div>
+
+        <h2 class="flowers-heading">Цветы<span class="flower-line" aria-hidden="true"></span></h2>
+        <p class="gift-note">Если вы планировали подарить нам цветы, замените их, пожалуйста, на виниловую пластинку: сразу после свадьбы мы уезжаем в путешествие и не успеем насладиться букетами, а пластинки будут еще много лет наполнять наш дом прекрасными мелодиями.</p>
+
+        <h2>Пожелания</h2>
+        <p class="gift-note">Теплые пожелания и подарки будет удобно передать в конверте.</p>
+
+        <h2>Контакты</h2>
+        <p>По всем вопросам в день свадьбы или для согласования сюрпризов обращайтесь к нашему свадебному координатору.</p>
+        <a class="contact-link" href="tel:+79500164246">+7 950 016-42-46<br>Ольга Леонова</a>
 
         <h2>Ждем Вас</h2>
         <p>С любовью, Полина и Артем!</p>
@@ -190,6 +195,6 @@
       </article>
     </section>
   </main>
-  <script src="script.js"></script>
+  <script src="script.js?v=final-structure-clean-2"></script>
 </body>
 </html>
